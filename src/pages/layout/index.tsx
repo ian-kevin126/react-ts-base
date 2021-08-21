@@ -26,7 +26,7 @@ const LayoutPage: FC = () => {
             <Sider className="site-layout-background" width={200}>
                 <Menu
                     mode="inline"
-                    theme={'dark'}
+                    theme={'light'}
                     defaultSelectedKeys={['1']}
                     defaultOpenKeys={['sub1']}
                     style={{height: '100%'}}

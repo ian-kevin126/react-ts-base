@@ -1,35 +1,15 @@
-import React, { FC } from 'react';
-import { Route, useNavigate } from 'react-router-dom';
-import { Result, Button } from 'antd';
-import { RouteProps, useLocation } from 'react-router';
+import React, {FC} from 'react';
+import {Route} from 'react-router-dom';
+import {RouteProps} from 'react-router';
 import {useAppState} from "@/stores";
+import UnauthorizedPage from "@/pages/error/UnauthorizedPage";
 
 const AuthorizedRoute: FC<RouteProps> = props => {
-    const { logged } = useAppState(state => state.user);
-    const navigate = useNavigate();
-    // const { formatMessage } = useLocale();
-    const location = useLocation();
+    const {logged} = useAppState(state => state.user);
 
-    console.log('logged',logged)
+    console.log('logged', logged)
 
-    return logged ? (
-        <Route {...props} />
-    ) : (
-        <Result
-            status="403"
-            title="403"
-            subTitle={'subtitle'}
-            extra={
-                <Button
-                    type="primary"
-                    onClick={() => navigate(`/login${'?from=' + encodeURIComponent(location.pathname)}`, { replace: true })}
-                >
-                    {/*{formatMessage({ id: 'gloabal.tips.goToLogin' })}*/}
-                    去登录
-                </Button>
-            }
-        />
-    );
+    return logged ? (<Route {...props} />) : (<UnauthorizedPage/>);
 };
 
 export default AuthorizedRoute;
