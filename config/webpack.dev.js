@@ -18,7 +18,7 @@ const devConfig = {
         // 并没有配置相应的找不到路径就返回原本页面，即加载其自己的组件，解决：配置devServer中的historyApiFallback为true
         historyApiFallback: true
     },
-    // 注意：这里要设置 target: 'web'才会有热更新效果
+    // 注意：这里要设置 target: 'web' 才会有热更新效果
     target: 'web',
     plugins: [new HotModuleReplacementPlugin(), new ReactRefreshWebpackPlugin()],
 };
