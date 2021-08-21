@@ -2,11 +2,11 @@ import React, {FC, Suspense} from 'react'
 import {Breadcrumb, Layout, Menu} from 'antd'
 import {Outlet} from "react-router-dom";
 import SuspendFallbackLoading from "@/pages/layout/SuspendFallbackLoading";
-import SubMenu from 'antd/lib/menu/SubMenu';
 import {LaptopOutlined, NotificationOutlined, UserOutlined} from "@ant-design/icons";
 import './index.less'
 
 const {Header, Content, Sider, Footer} = Layout;
+const {SubMenu} = Menu
 
 /**
  * 主页布局组件
