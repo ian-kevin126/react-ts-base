@@ -1,15 +1,20 @@
-import React from 'react';
-import Home from '@/pages/home/home'
-import Myy from './myy.jpg';
-import { Button } from 'antd';
+import React, {Suspense} from 'react';
+import SuspendFallbackLoading from "@/pages/layout/SuspendFallbackLoading";
+import {BrowserRouter} from "react-router-dom";
+import RenderRouter from "@/routes";
 
 function App() {
     return (
-        <div className="app">
-            <h1>welcome, my friends!</h1>
-            <Home />
-            <Button>1111</Button>
-        </div>
+        <Suspense fallback={
+            <SuspendFallbackLoading
+                message="Alert message title"
+                description="Further details about the context of this alert."
+            />
+        }>
+            <BrowserRouter>
+                <RenderRouter />
+            </BrowserRouter>
+        </Suspense>
     );
 }
 

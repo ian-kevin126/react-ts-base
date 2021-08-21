@@ -2,11 +2,15 @@ import React, { FC } from 'react';
 import { Route, useNavigate } from 'react-router-dom';
 import { Result, Button } from 'antd';
 import { RouteProps, useLocation } from 'react-router';
+import {useAppState} from "@/stores";
 
-const PrivateRoute: FC<RouteProps> = props => {
-    const logged = true;
+const AuthorizedRoute: FC<RouteProps> = props => {
+    const { logged } = useAppState(state => state.user);
     const navigate = useNavigate();
+    // const { formatMessage } = useLocale();
     const location = useLocation();
+
+    console.log('logged',logged)
 
     return logged ? (
         <Route {...props} />
@@ -21,11 +25,11 @@ const PrivateRoute: FC<RouteProps> = props => {
                     onClick={() => navigate(`/login${'?from=' + encodeURIComponent(location.pathname)}`, { replace: true })}
                 >
                     {/*{formatMessage({ id: 'gloabal.tips.goToLogin' })}*/}
-                    goToLogin
+                    去登录
                 </Button>
             }
         />
     );
 };
 
-export default PrivateRoute;
+export default AuthorizedRoute;
