@@ -1,9 +1,9 @@
 import React from "react";
 
-function RoutePermissionPage() {
+function WithTabs() {
     return (<div>
-        RoutePermissionPage
+        WithTabs
     </div>);
 }
 
-export default RoutePermissionPage;
+export default WithTabs;

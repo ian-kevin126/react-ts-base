@@ -1,9 +1,9 @@
 import React from "react";
 
-function SearchPage() {
+function AsidePage() {
     return (<div>
-        SearchPage
+        AsidePage
     </div>);
 }
 
-export default SearchPage;
+export default AsidePage;

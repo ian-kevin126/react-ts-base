@@ -1,9 +1,9 @@
 import React from "react";
 
-function Permission() {
+function RoutePermissionPage() {
     return (<div>
-        Permission
+        RoutePermissionPage
     </div>);
 }
 
-export default Permission;
+export default RoutePermissionPage;

@@ -1,9 +1,9 @@
 import React from "react";
 
-function FormPage() {
+function WithSearch() {
     return (<div>
-        FormPage
+        WithSearch
     </div>);
 }
 
-export default FormPage;
+export default WithSearch;

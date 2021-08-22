@@ -1,9 +1,9 @@
 import React from "react";
 
-function RoutePermissionPage() {
+function SearchPage() {
     return (<div>
-        RoutePermissionPage
+        SearchPage
     </div>);
 }
 
-export default RoutePermissionPage;
+export default SearchPage;

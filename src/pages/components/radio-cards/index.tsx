@@ -1,9 +1,9 @@
 import React from "react";
 
-function AsidePage() {
+function RadioCards() {
     return (<div>
-        AsidePage
+        RadioCards
     </div>);
 }
 
-export default AsidePage;
+export default RadioCards;

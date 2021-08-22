@@ -1,9 +1,9 @@
 import React from "react";
 
-function TabsPage() {
+function WithRadioCards() {
     return (<div>
-        TabsPage
+        WithRadioCards
     </div>);
 }
 
-export default TabsPage;
+export default WithRadioCards;

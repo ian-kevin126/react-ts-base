@@ -1,9 +1,9 @@
 import React from "react";
 
-function RadioCards() {
+function WithAside() {
     return (<div>
-        RadioCards
+        WithAside
     </div>);
 }
 
-export default RadioCards;
+export default WithAside;

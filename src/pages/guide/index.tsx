@@ -1,9 +1,9 @@
 import React from "react";
 
-function Documentation() {
+function Guide() {
     return (<div>
-        Documentation
+        guide
     </div>);
 }
 
-export default Documentation;
+export default Guide;

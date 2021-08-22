@@ -1,9 +1,9 @@
 import React from "react";
 
-function ButtonPermissionPage() {
+function FormPage() {
     return (<div>
-        ButtonPermissionPage
+        FormPage
     </div>);
 }
 
-export default ButtonPermissionPage;
+export default FormPage;
