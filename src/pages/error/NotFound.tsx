@@ -20,7 +20,7 @@ function NotFound() {
                     type="primary"
                     onClick={() => navigate(`/`, {replace: true})}
                 >
-                    {/*{formatMessage({ id: 'gloabal.tips.goToLogin' })}*/}
+                    {/*{formatMessage({ id: 'global.tips.goToLogin' })}*/}
                     去首页
                 </Button>
             }

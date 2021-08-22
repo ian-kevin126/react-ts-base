@@ -1,9 +1,9 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { Menu, Dropdown } from 'antd';
 import { SettingOutlined } from '@ant-design/icons';
-import { LocaleFormatter } from 'locales';
-import { useAppDispatch, useAppState } from 'stores';
-import { removeTag, removeOtherTag, removeAllTag } from 'stores/tags-view.store';
+import {useAppDispatch, useAppState} from "@/stores";
+import { LocaleFormatter } from '@/locales';
+import { removeTag, removeOtherTag, removeAllTag } from '@/stores/tags-view.store';
 
 const TagsViewAction: FC = () => {
   const { activeTagId } = useAppState(state => state.tagsView);

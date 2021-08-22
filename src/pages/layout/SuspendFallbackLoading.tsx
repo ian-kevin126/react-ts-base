@@ -6,7 +6,7 @@ import "./index.less";
 const SuspendFallbackLoading: FC = () => {
     return (<div className="loading__wrapper">
         <Spin size="large" className="loading" />
-    </div>)
+    </div>);
 }
 
-export default SuspendFallbackLoading
+export default SuspendFallbackLoading;

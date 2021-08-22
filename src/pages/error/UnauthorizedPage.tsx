@@ -2,14 +2,14 @@ import {Button, Result} from "antd";
 import React from "react";
 import {useNavigate} from "react-router-dom";
 import {useLocation} from "react-router";
-import './index.less'
+import './index.less';
 
 /**
  * 未授权页面
  * @constructor
  */
 function UnauthorizedPage() {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const location = useLocation();
     // const { formatMessage } = useLocale();
 
@@ -28,7 +28,7 @@ function UnauthorizedPage() {
                 </Button>
             }
         />
-    </div>)
+    </div>);
 }
 
-export default UnauthorizedPage
+export default UnauthorizedPage;

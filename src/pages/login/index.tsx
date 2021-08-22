@@ -2,7 +2,6 @@ import React, {FC} from 'react';
 import {Button, Checkbox, Form, Input} from 'antd';
 import './index.less';
 import {useNavigate, useLocation} from 'react-router-dom';
-import {Location} from 'history';
 import {LoginParams} from "@/interface/user/login";
 import {useAppDispatch} from "@/stores";
 import {loginAsync} from "@/stores/user.store";
@@ -16,7 +15,8 @@ const initialValues: LoginParams = {
 
 const LoginForm: FC = () => {
     const navigate = useNavigate();
-    const location = useLocation() as Location<{ from: string }>;
+    // const location = useLocation() as Location<{ from: string }>;
+    const location = useLocation();
     const dispatch = useAppDispatch();
 
     const onFinished = async (form: LoginParams) => {

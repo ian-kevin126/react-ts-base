@@ -137,7 +137,6 @@ const mockMenuList: MenuList = [
       }
     ]
   },
-
   {
     name: 'business',
     label: {

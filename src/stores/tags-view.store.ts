@@ -1,5 +1,5 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { TagItem, TagState } from 'interface/layout/tagsView.interface';
+import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {TagItem, TagState} from "@/interface/layout/tagsView.interface";
 
 const initialState: TagState = {
   activeTagId: '',

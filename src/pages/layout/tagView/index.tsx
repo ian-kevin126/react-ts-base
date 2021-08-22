@@ -1,9 +1,9 @@
-import { FC, useCallback, useEffect } from 'react';
+import React, { FC, useCallback, useEffect } from 'react';
 import { Tabs } from 'antd';
 import { useNavigate, useLocation } from 'react-router-dom';
 import TagsViewAction from './tagViewAction';
-import { useAppDispatch, useAppState } from 'stores';
-import { addTag, removeTag, setActiveTag } from 'stores/tags-view.store';
+import {useAppDispatch, useAppState} from "@/stores";
+import { setActiveTag, removeTag, addTag } from '@/stores/tags-view.store';
 
 const { TabPane } = Tabs;
 
